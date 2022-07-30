@@ -14,3 +14,7 @@ function replace(s){
     }
     return s;
   }
+
+  function replace(s){
+    return s.split("").map(char => "aeiou".includes(char.toLowerCase()) ? "!" : char).join("")
+  }
