@@ -18,3 +18,13 @@ function replace(s){
   function replace(s){
     return s.split("").map(char => "aeiou".includes(char.toLowerCase()) ? "!" : char).join("")
   }
+
+  function replace(s){
+    let arr = s.split("")
+      for (let i = 0; i < arr.length; i ++) {
+        if (arr[i] === 'a' || arr[i] === 'e' || arr[i] === 'i' || arr[i] === 'o' || arr[i] === 'u' || arr[i] === 'A' || arr[i] === 'E' || arr[i] === 'I' || arr[i] === 'O' || arr[i] === 'U') {
+          arr[i] = '!'
+        }
+      }
+    return arr.join("")
+  }
