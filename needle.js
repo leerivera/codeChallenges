@@ -10,3 +10,14 @@ function findNeedle(haystack) {
     let position = haystack.indexOf("needle");
     return `found the needle at position ${position}`;
   }
+
+
+  function findNeedle(haystack) {
+    var i = 0;
+    while (i < haystack.length) {
+      if (haystack[i] == 'needle') {
+        return 'found the needle at position ' + i;
+      }
+      i++;  
+    }
+  }
