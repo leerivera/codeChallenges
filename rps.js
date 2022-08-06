@@ -22,3 +22,10 @@ const rps = (p1, p2) => {
      else
        return 'Player 2 won!';
   };
+
+  const rps = (p1, p2) => {
+    if(p1 === p2) {
+      return 'Draw!'
+    }; 
+    return `Player ${/rockscissors|scissorspaper|paperrock/.test(p1+p2)? 1 : 2} won!`;
+  }
