@@ -38,6 +38,7 @@ function points(games) {
     return total;
   }
 
+<<<<<<< HEAD
   // with for loop
   function points(games) {
     var sum=0;
@@ -51,4 +52,6 @@ function points(games) {
     return sum;
   }
 
+=======
+>>>>>>> 31948a6fed3b1e6b554f2786696406a934f31ee2
 
