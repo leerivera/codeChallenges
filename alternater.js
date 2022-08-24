@@ -31,3 +31,9 @@ const swapCase = (char) => isLowerCase(char) ? char.toUpperCase() : char.toLower
 String.prototype.toAlternatingCase = function() {
   return [...this].map(swapCase).join('');
 };
+
+String.prototype.toAlternatingCase = function () {
+    return this.replace(/./g, function (match) {
+      return /[a-z]/.test(match) ? match.toUpperCase() : match.toLowerCase();
+    });
+  }
